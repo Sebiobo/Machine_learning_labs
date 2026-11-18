@@ -25,6 +25,7 @@ def generate_coordinate(mean, sigma):
             return candidate
 
 
+
 def generate_point(zone):
     x = generate_coordinate(zone["mean_x"], zone["sigma_x"])
     y = generate_coordinate(zone["mean_y"], zone["sigma_y"])
@@ -123,7 +124,7 @@ for current_zone in zones:
 
 plt.xlabel("X coordinate")
 plt.ylabel("Y coordinate")
-plt.title("Training Dataset - 3030 Points")
+plt.title("Training Dataset - 3000 Points")
 plt.legend()
 plt.grid(True)
 plt.axis("equal")
